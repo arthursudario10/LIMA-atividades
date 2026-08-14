@@ -1,0 +1,10 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:blueviolet;
+    text-align: center;
+}
+.tiulo_h1, #paragrafo{
+    color: black;
+    font-size: 36px;
+    text-align: center;
+}

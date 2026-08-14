@@ -1,4 +1,3 @@
-Aqui está o README.md completo com seu nome corrigido:
 
 # Página Pessoal em HTML
 
@@ -71,6 +70,3 @@ Os elementos semânticos utilizados foram escolhidos para criar uma estrutura l�
 Projeto desenvolvido por **Arthur Sudário Bonatto Reis** como atividade prática de HTML, com foco em estrutura semântica e boas práticas de desenvolvimento web.
 
 Ano: 2026
-
-
-Esse arquivo pode ser salvo com o nome README.md na mesma pasta do seu projeto HTML.
