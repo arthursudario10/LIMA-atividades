@@ -1,42 +1,36 @@
 # LIMA-atividades
-📘 Resolução de Exercícios de XML
-
-Este repositório contém a resolução de 6 exercícios sobre XML, desenvolvidos como atividade prática para fixação dos conceitos fundamentais da linguagem.
 
 👨‍💻 Autor
 
 Arthur Sudário Bonatto Reis
 
-🎯 Objetivo
+# 📚 Atividades de LIMA — Linguagem de Marcação
 
-O objetivo deste repositório é reunir as soluções dos exercícios propostos, demonstrando a aplicação dos principais conceitos de XML, como:
+Repositório destinado ao armazenamento das atividades desenvolvidas durante as aulas de **LIMA (Linguagem de Marcação)** no curso de Desenvolvimento de Sistemas do SENAI-SP.
 
-Estrutura de documentos XML;
-Criação de elementos e atributos;
-Organização hierárquica de dados;
-Boas práticas na escrita de arquivos XML;
-Validação e consistência dos documentos.
-📂 Estrutura do Repositório
-📦 exercicios-xml
-├── Exercicio-01/
-├── Exercicio-02/
-├── Exercicio-03/
-├── Exercicio-04/
-├── Exercicio-05/
-├── Exercicio-06/
-└── README.md
+## 🎯 Objetivo
 
-📚 Conteúdo
+Praticar os conceitos de desenvolvimento web, utilizando linguagens de marcação e estilização para criar páginas organizadas e funcionais.
 
-O repositório é composto por 6 exercícios, cada um abordando diferentes aspectos da linguagem XML e contribuindo para o desenvolvimento do conhecimento sobre estruturação e organização de dados.
+## 🛠️ Tecnologias utilizadas
 
-🛠️ Tecnologias Utilizadas
-XML
-Visual Studio Code
-📖 Finalidade
+- HTML5
+- CSS3
+- Visual Studio Code
 
-Este repositório possui finalidade educacional, sendo destinado ao estudo e à prática dos conceitos de XML.
+## 📂 Conteúdo
 
-📄 Licença
+O repositório reúne atividades práticas realizadas durante as aulas, incluindo:
 
-Este projeto é destinado exclusivamente para fins acadêmicos e de aprendizado.
+- Estrutura básica de documentos HTML;
+- Títulos, parágrafos, links e outros elementos;
+- Semântica HTML;
+- Formatação de textos;
+- Estilização de páginas com CSS;
+- Criação de páginas web.
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Arthur Sudário Bonatto Reis**.
+
+Estudante de Desenvolvimento de Sistemas — SENAI-SP.
