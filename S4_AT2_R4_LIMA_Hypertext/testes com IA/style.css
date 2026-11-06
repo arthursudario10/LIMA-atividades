@@ -1,0 +1,453 @@
+
+/* Configurações gerais */
+:root {
+    --fundo: #080b12;
+    --superficie: #111827;
+    --superficie-clara: #1b2638;
+    --destaque: #e87532;
+    --destaque-hover: #ff995f;
+    --texto: #f1f5f9;
+    --texto-suave: #b8c4d6;
+    --borda: #2d3b50;
+    --sucesso: #16d99a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background: linear-gradient(135deg, #101a2c, #172b46);
+    text-align: center;
+    padding: 3rem 1rem;
+    border-bottom: 2px solid var(--destaque);
+}
+
+.cabecalho h1 {
+    color: var(--destaque);
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.cabecalho p {
+    color: var(--texto-suave);
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Menu de navegação */
+.navegacao {
+    background: var(--superficie);
+    border-bottom: 1px solid var(--borda);
+}
+
+.navegacao ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 1rem;
+}
+
+.navegacao a {
+    display: block;
+    color: var(--texto);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.navegacao a:hover {
+    color: var(--destaque-hover);
+    background: var(--superficie-clara);
+}
+
+/* Conteúdo principal */
+main {
+    width: min(1200px, 92%);
+    margin: auto;
+}
+
+.secao {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--borda);
+}
+
+.secao h2 {
+    color: var(--destaque-hover);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-left: 0.8rem;
+    border-left: 4px solid var(--destaque);
+}
+
+.secao h3 {
+    color: var(--texto);
+    margin-bottom: 0.8rem;
+}
+
+.secao p {
+    color: var(--texto-suave);
+    margin-bottom: 0.7rem;
+}
+
+/* Produtos */
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.produto {
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    border-color: var(--destaque);
+    box-shadow: 0 8px 25px rgba(232, 117, 50, 0.12);
+}
+
+.produto h3 {
+    color: var(--destaque-hover);
+    margin-bottom: 1rem;
+}
+
+.produto img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+}
+
+.produto p {
+    margin-bottom: 0.6rem;
+}
+
+.produto strong {
+    color: var(--sucesso);
+}
+
+/* Tabela de preços */
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+    background: var(--superficie);
+}
+
+th,
+td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--borda);
+}
+
+thead {
+    background: var(--superficie-clara);
+}
+
+th {
+    color: var(--destaque-hover);
+}
+
+td {
+    color: var(--texto-suave);
+}
+
+tbody tr:hover {
+    background: #1b2a3d;
+}
+
+/* Sobre nós */
+.grade-sobre {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+}
+
+.informacao {
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.informacao h3 {
+    color: var(--destaque-hover);
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+fieldset {
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    padding: 1.5rem;
+    min-width: 0;
+}
+
+legend {
+    color: var(--destaque-hover);
+    padding: 0 0.6rem;
+    font-size: 1.05rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.campo:last-child {
+    margin-bottom: 0;
+}
+
+.campo label,
+.campo strong {
+    color: var(--texto);
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background: #0b1220;
+    color: var(--texto);
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    font: inherit;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    accent-color: var(--destaque);
+}
+
+input[type="file"] {
+    padding: 0.6rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+}
+
+.opcao label {
+    font-weight: normal;
+}
+
+/* Botões do formulário */
+.botoes-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+button {
+    background: var(--destaque);
+    color: #fff;
+    border: 1px solid var(--destaque-hover);
+    border-radius: 7px;
+    padding: 0.9rem 1.3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: var(--destaque-hover);
+    transform: translateY(-2px);
+}
+
+button.botao-reset {
+    background: var(--superficie-clara);
+    color: var(--texto);
+    border-color: var(--borda);
+}
+
+/* Lista de serviços */
+.lista-servicos {
+    padding-left: 1.5rem;
+    color: var(--texto-suave);
+}
+
+.lista-servicos li {
+    margin-bottom: 0.6rem;
+}
+
+/* Promoção e botão WhatsApp */
+.promocao {
+    text-align: center;
+    background: linear-gradient(135deg, #14233a, #202044);
+    border: 1px solid var(--destaque);
+    border-radius: 12px;
+    padding: 2rem 1rem;
+    margin: 2rem 0 3rem;
+}
+
+.promocao h2 {
+    color: var(--destaque-hover);
+    margin-bottom: 0.8rem;
+}
+
+.promocao p {
+    color: var(--texto);
+    margin-bottom: 1.3rem;
+    font-size: 1.1rem;
+}
+
+.promocao del {
+    color: #ff8b8b;
+}
+
+.promocao strong {
+    color: var(--sucesso);
+}
+
+.promocao a {
+    display: inline-block;
+    padding: 0.9rem 1.5rem;
+    background: var(--destaque);
+    color: #ffffff;
+    border: 1px solid var(--destaque-hover);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.promocao a:hover {
+    background: var(--destaque-hover);
+    box-shadow: 0 0 18px rgba(232, 117, 50, 0.35);
+    transform: translateY(-3px);
+}
+
+/* Rodapé */
+.rodape {
+    background: var(--superficie);
+    border-top: 2px solid var(--destaque);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.rodape p {
+    color: var(--texto-suave);
+    margin-bottom: 0.4rem;
+}
+
+.rodape strong {
+    color: var(--destaque-hover);
+}
+
+/* Acessibilidade: foco pelo teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--destaque-hover);
+    outline-offset: 3px;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .grade-produtos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grade-sobre {
+        grid-template-columns: 1fr;
+    }
+
+    .secao {
+        padding: 2.2rem 0;
+    }
+}
+
+/* Celulares */
+@media (max-width: 520px) {
+    .grade-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .cabecalho {
+        padding: 2rem 1rem;
+    }
+
+    .navegacao ul {
+        flex-direction: column;
+    }
+
+    .navegacao li,
+    .navegacao a {
+        width: 100%;
+        text-align: center;
+    }
+
+    fieldset {
+        padding: 1rem;
+    }
+
+    .botoes-formulario {
+        flex-direction: column;
+    }
+
+    .botoes-formulario button {
+        width: 100%;
+    }
+
+    .promocao {
+        padding: 1.5rem 1rem;
+    }
+}
